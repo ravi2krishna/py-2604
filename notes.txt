@@ -194,4 +194,190 @@
 
 
 
+23rd Feb 2026
+=============
+
+    -> Programming Paradigms 
+
+        -> A programming paradigm is a relatively high-level way to conceptualize 
+        and structure the implementation of a computer program.
+
+        -> Problem: How To Reach Institute ? 
+
+            -> Solution 1: I'll come by Walk 
+
+            -> Solution 2: I'll come by Bike 
+
+            -> Solution 3: I'll come by Car 
+
+            -> etc 
+        
+
+        -> We have Two Popular Types
+
+            -> Imperative Approach 
+
+                -> Focus in on "HOW TO DO"
+
+                -> Object Oriented Programming (OOP)
+
+
+            -> Declarative Approach 
+
+                -> Focus in on "WHAT TO DO"
+
+                -> Functional Programming 
+
+    -> NOTE: Python uses multi paradigm approach i.e we use 
+    Imperative Approach & Declarative Approach 
+
+
+    -> Imperative Code With Python 
+
+                def get_user_emails(users):
+                        emails = []  # Step-by-step building the result
+
+                        for i in range(len(users)):         # Loop manually
+                            user = users[i]                 # Fetch each user
+
+                            if user.get("email") is not None:   # Check condition manually
+                                emails.append(user["email"])    # Manually add to list
+
+                        return emails
+
+
+                    # Sample users list
+                    users = [
+                        {"name": "Mike", "email": "mike@gmail.com"},
+                        {"name": "John", "email": None},
+                        {"name": "Sara", "email": "sara@gmail.com"}
+                    ]
+
+                    print(get_user_emails(users))
+
+
+    -> Declarative Code With Python 
+
+            emails = [u["email"] for u in users if u["email"] is not None]
+
+    
+    -> Full Stack Developer: Object Oriented Programming (Imperative)
+
+    -> Data / DevOps / Cloud: Functional Programming (Declarative)
+
+
+    -> Key Features Of Python / Why Python ?
+
+        -> Simplicity & Easy Readability 
+
+        -> Versatility 
+
+            -> Data Oriented / Full Stack / Cloud / DevOps etc 
+        
+        -> Multi Paradigm Programming Language (OOP / Functional)
+
+        -> Dynamic Typed 
+
+        -> Open Source (FREE)
+
+        -> High Level Language (Just Like English)
+
+        -> One of the Most Popular Language in industry now 
+
+            -> List Of Popular Applications Where Python is used 
+
+            -> https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites  
+
+            -> Python is for Backend (Business Logic Building)
+
+    
+    -> System Requirements For Python 
+
+        -> Hardware 
+
+            -> i3 / i5 Processor 
+
+            -> 4 GB RAM / 8 GB RAM 
+
+            -> 500 GB HDD / SSD 
+
+        -> Softwares 
+
+            -> Install Python Interpreter 
+
+                -> https://www.python.org/
+
+            
+            -> IDE: Integrated Development Environment
+
+                -> Tools for writing code (syntax highlight, auto code completion, extensions etc)
+
+                -> Visual Studio Code - VS Code 
+
+    -> Python Setup 
+
+        -> open command prompt (windows)
+
+            -> python --version 
+
+                -> if not found download exe and install 
+
+    -> Where To Write Code ? 
+
+        -> Command Line Mode (CLI) (Not Recommended)
+
+            -> We write the code in command prompt(win) / terminal(mac)
+
+            -> "Temporary", once we close the session all code is reset 
+
+            -> Enter into command line mode using python
+
+        
+        -> Script Mode (Recommended)
+
+            -> We write the code in files using IDE i.e Visual Studio Code 
+
+            -> "Permanent", stored on disk 
+
+    
+    -> How To Write Code ? 
+
+        -> Any Programming Language has Rules i.e "Syntax"
+
+        -> Comparing programming language with english language
+
+            -> i taking class now today at 12:00 PM now (incorrect)
+
+            -> i'm taking class today at 12:00 PM (correct)
+
+        
+        -> Learn English
+
+            -> English has 26 Alphabets (abcd.......z)
+
+            -> Using these Alphabets, we learn how to form words and complex sentences over time
+
+
+        -> Learn Python
+
+            -> Python has 35 Keywords 
+
+            -> Using these Keywords we form statements, using correct syntax over time  
+
+            -> List Of Python Keywords
+
+                -> https://docs.python.org/3/reference/lexical_analysis.html#keywords
+
+                    False      await      else       import     pass
+                    None       break      except     in         raise
+                    True       class      finally    is         return
+                    and        continue   for        lambda     try
+                    as         def        from       nonlocal   while
+                    assert     del        global     not        with
+                    async      elif       if         or         yield
+
+                -> NOTE: All the above keywords hold some special meaning to python Interpreter 
+
+
+    
 
