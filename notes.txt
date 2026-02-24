@@ -379,5 +379,87 @@
                 -> NOTE: All the above keywords hold some special meaning to python Interpreter 
 
 
-    
+24th Feb 2026
+=============
 
+    -> Python Rules / Syntax / Best Practices 
+
+        -> Any Python File we write, should have extension as .py 
+
+        -> Python ignores lines that start with # 
+
+        -> Comments starts with # 
+
+        -> In python when working with numeric data(1,2,0,-1,5.5)
+        we can directly use print() with numerics 
+
+        -> In python when working with text data, we call it as "String"
+
+            -> In Python Strings are represented using '' or ""
+
+
+    -> Identifiers 
+
+        -> An identifier is a "name" used to uniquely identify a piece of data 
+        in python code 
+
+            -> Variable 
+            -> Function 
+            -> Class 
+            -> Object 
+            -> etc 
+
+    -> Identifiers Rules 
+
+            -> Can Contain
+
+                -> Letters (a-z A-Z)
+                -> Digits (0-9)
+                -> Special Symbols ( _ Only underscore)
+
+            -> Must Start With 
+
+                -> A letter or _ (underscore)
+
+    -> NOTE: Always use proper way of naming identifiers        
+
+    
+    
+    -> Variables 
+
+        -> Variable is a named storage location in computers 
+        memory (RAM), that holds value or data 
+
+            -> Computer -> RAM -> Variables  
+
+        -> Variable Syntax 
+
+            -> variable_name = value 
+
+                -> variable_name should follow identifier Rules
+                -> = assignment operator 
+                -> value is data you want to store 
+
+                    -> data = 10 (valid)
+                    -> $data= 10 (invalid)
+                    -> data = ten (invalid)
+                    -> data = 'ten' (valid)
+
+        -> Variables Allow You To 
+
+            -> Store Data (Assign)
+
+            -> Retrieve Data (Get)
+
+            -> Manipulate Data (Change)  
+
+        -> Combine Variables with our custom statements 
+
+            -> Concatenation: Joining Text Data(Strings) using + operator
+
+            -> When Combining Strings with Other Data types Like
+            int, float, boolean etc we use , operator
+
+        -> To Know what type of data / value we are using
+
+            -> use type() function to know what data type is 
