@@ -116,3 +116,25 @@ print(dir(data))
 data = ["101","102","106","108"]
 print(type(data))
 print(dir(data))
+
+# Identity Operators
+n1 = 10 
+n2 = 10 
+n3 = 11
+print(id(n1))
+print(id(n2))
+
+print(n1 is n2)
+print(n1 is n3)
+print(n1 is not n3)
+
+# Bitwise Operator 
+n1 = 5 # 0000000000000101
+n2 = 3 # 0000000000000011
+       # 0000000000000001 - &
+       # 0000000000000111 - |
+       
+print(n1 & n2) 
+
+print(n1 | n2) 
+

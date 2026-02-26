@@ -585,3 +585,100 @@
 
                             -> We have dir() - tells what kind of Operations
                             we can Perform on a data type 
+
+
+26th Feb 2026
+=============
+
+    -> Identity Operators
+
+        -> Used To Check if objects are same 
+
+            -> is: Returns True, if objects are same 
+
+            -> is not: Returns True, if objects are not same 
+
+        -> NOTE: 
+
+            ->  (Equality operator ==): Compares the values of two objects. 
+                It returns True if their contents are the same, 
+                regardless of where they are stored in memory.
+
+            -> is (Identity operator): Compares the identity (memory address) of two objects. 
+                It returns True only if both variables refer to the exact same object in memory.    
+
+
+    -> Bitwise Operator 
+
+        -> Used in Low Level Programming (0101010101)
+
+            -> & - if both the bits are 1, then result is 1 
+            -> | - if one of the bits is 1, then reset is 1 
+            -> etc 
+
+
+    -> Data Types 
+
+        -> Data Types are Categorization that defines, 
+        what kind of data a Variable can hold 
+
+    -> Numeric Types 
+
+        -> int: 1,2,3,0,-1,-2 etc 
+
+        -> float: 1.0,2.0,3.5,0.0,-1.0,-2.5 etc 
+
+        -> complex:
+
+            -> a + ib (math)
+
+            -> a + bj 
+
+    -> Boolean Type
+
+        -> bool: Represents True / False (case sensitive)
+
+    -> None Type
+
+        -> NoneType: Represents Absence Of Value 
+
+    -> Strings 
+
+        -> str: String is sequence of characters enclosed in '' or ""
+
+    -> NOTE:
+
+        -> Simple Data Types
+
+            -> Holds Single Value in a Single Variable 
+
+        -> Complex Data Types 
+
+            -> Holds Multiple Values in a Single Variable
+
+    -> List: List is a complex Datatype i.e holds multiple values
+    and is represented using [] 
+
+    -> Tuple: Tuple is a complex Datatype i.e holds multiple values
+    and is represented using () 
+
+    -> Set: Set is a complex Datatype i.e holds multiple values
+    and is represented using {} 
+
+    -> Frozenset: Frozenset is a complex Datatype i.e holds multiple values
+    and is represented using frozenset class  
+
+    -> Dictionary: Dictionary is a complex Datatype i.e holds 
+    multiple key and values and is represented using {} 
+
+    -> NOTE: All the above Data types are predefined in python 
+
+    -> NOTE: Based On Custom Requirements coming from clients,
+    we can create our own data types i.e User Defined Datatype 
+
+    -> Create Custom Datatype
+
+        -> syntax
+
+            class CustomDataType:
+                statements
