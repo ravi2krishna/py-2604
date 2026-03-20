@@ -1036,3 +1036,75 @@
 ===============
 
     -> Using Strings & String Methods From Application Point Of View 
+
+20th Mar 2026
+===============
+
+        -> Simple Data Types 
+
+        -> Can Hold "One Value" in a single variable 
+
+            -> data = 10
+            -> data = 10.5
+            -> data = "hello" 
+
+    -> Complex Data Types 
+
+        -> Can Hold "Multiples Value" in a single variable 
+
+            -> data = 10,20,30,40,50
+            -> data = 10.5,3.5.4.5
+            -> data = "hello","hi","hey" 
+
+    -> Python provides following classes to work with complex data types 
+
+        -> List
+        -> Tuple 
+        -> Dictionary
+        -> Set 
+
+    
+    
+    -> List 
+
+        -> List is a data structure which allows you to store multiple values
+        in a single variable, each value is separated with , 
+
+        -> Lists are represented using [ ] or using "list" class
+
+    -> Accessing Data In Lists 
+
+        -> Like in Strings, we have index concept in lists too 
+
+        -> Index starts from Zero 
+
+        -> Supports Both Positive and Negative Index 
+
+        -> Slicing is same as Strings 
+
+        -> Loops we can Apply 
+
+        -> Operators we can Apply 
+
+        -> Conditionals we can Apply 
+
+        -> Duplicates Allowed 
+
+        -> Insertion Order Is Preserved 
+
+    -> List Characteristics 
+
+        -> Mutable: Lists are Mutable in nature 
+
+        -> Order: Lists are Order(Order Preserved)
+
+        -> Duplicates: Lists Allow Duplicates 
+
+        -> NOTE: 
+        
+            -> Requirement: Store Employee Details like AADHAR & PAN
+
+                -> Unique AADHAR ID's only: Lists doesn't satisfy this requirement 
+                -> Modify PAN ID 
+
+
