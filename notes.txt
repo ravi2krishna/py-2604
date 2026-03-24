@@ -1209,3 +1209,104 @@
 
         -> Duplicates: Dictionaries Allow Duplicates For Values Only, 
         Duplicated Keys allowed, but overridden 
+
+
+24th Mar 2026
+===============
+
+    -> Sets 
+
+        -> Set is a data structure which allows you to store multiple values
+        in a single variable, each value is separated with , 
+
+        -> Sets are represented using { } or using "set" class
+
+    -> Accessing Data In Sets 
+
+        -> Like in Strings, we have DON'T index concept in sets 
+        
+        -> No Indexing
+
+        -> No Slicing 
+
+        -> Loops we can Apply 
+
+        -> Operators we can Apply 
+
+        -> Conditionals we can Apply 
+
+        -> Duplicates Not Allowed i.e Removes Duplicates By default
+
+        -> Insertion Order Is Not Preserved 
+
+        -> To Easily Remember about Sets (UUU)
+
+            -> U - Unique 
+            -> U - Unordered
+            -> U - Unindex 
+
+    -> Set Methods / Operations 
+
+    -> NOTE: Sets are Mutable 
+
+    -> Set Characteristics 
+
+        -> Mutable: Sets are Mutable in nature(Can be Changed) 
+
+        -> UnOrdered: Sets are UnOrdered(Order Not Preserved)
+
+        -> Duplicates: Sets Doesn't Allow Duplicates 
+
+    
+    -> Frozenset
+
+        -> Frozenset is a data structure which allows you to store multiple values
+        in a single variable, each value is separated with , 
+
+        -> Frozenset are represented using or using "Frozenset" class
+
+        -> Accessing Data In Frozenset 
+
+        -> Like in Strings, we DON'T have index concept in Frozenset 
+
+        -> No Indexing 
+        
+        -> No Slicing 
+
+        -> Loops we can Apply 
+
+        -> Operators we can Apply 
+
+        -> Conditionals we can Apply 
+
+        -> Duplicates Not Allowed i.e Removes Duplicates By Default
+
+        -> Insertion Order Is Not Preserved 
+
+        -> NOTE: To Easily Remember Sets use (UUU)
+
+            -> U - Unique 
+            -> U - Unordered 
+            -> U - Unindex 
+
+
+        -> Frozenset Methods / Operations 
+
+        -> NOTE: Frozenset are Immutable 
+
+        -> Frozenset Characteristics 
+
+            -> Immutable: Frozenset are Immutable in nature(cannot be Changed) 
+
+            -> UnOrdered: Sets are UnOrdered(Order Not Preserved)
+
+            -> Duplicates: Sets Doesn't Allow Duplicates 
+
+
+    -> How / When To Use Above Data Structures In Applications ?
+
+        -> Lists            (When To Use)
+        -> Tuples           (When To Use)
+        -> Dictionaries     (When To Use)
+        -> Sets             (When To Use)
+
