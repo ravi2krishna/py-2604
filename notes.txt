@@ -1310,3 +1310,29 @@
         -> Dictionaries     (When To Use)
         -> Sets             (When To Use)
 
+
+25th Mar 2026
+===============
+
+    -> CRUD Applications 
+
+        -> CRUD stands for Create, Read, Update, and Delete, representing the four fundamental,
+        persistent operations for managing data within databases and software applications. 
+        
+        -> These operations allow users to add new data, view existing data, modify data, and 
+        remove data, forming the backbone of most web applications and user interfaces. 
+
+        -> We CRUD for applications that require persistent storage, such as content management 
+        systems, e-commerce sites, and customer relationship management (CRM) tools. 
+        Examples include online forms, user profile pages, and dashboards for managing records.
+
+            -> C - CREATE
+            -> R - READ
+            -> U - UPDATE
+            -> D - DELETE 
+
+        -> https://drive.google.com/file/d/1Yabj4nFUx_1g6eAw3EsEsopEWxivTK2Z/view?usp=sharing
+
+        -> https://drive.google.com/file/d/1gpWYycwbeRWrmShF5Hc1V86KcIVYJCfE/view?usp=sharing
+
+    
