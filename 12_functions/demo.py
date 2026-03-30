@@ -129,3 +129,126 @@ def employee_info(emp_name,emp_email,emp_location,emp_mobile,org_name="Google"):
      
 def employee_info(emp_name,emp_email,emp_location,emp_mobile,org_name="Google",planet="Earth"):
      print(f"Hi {emp_name}, your email is {emp_email}, working for {org_name} at location {emp_location}") 
+
+print("=" * 20)  
+     
+# Arbitrary Positional Arguments
+
+# def add_numbers(n1)
+
+# def add_numbers(n1,n2)
+
+# def add_numbers(n1,n2,n3)
+
+# def add_numbers(n1,n2,n3,...,n10)
+
+def add_numbers(*nums):
+    print(nums)
+    
+add_numbers(10,20)
+add_numbers(10,20,30)
+
+def add_numbers(*nums):
+    # find sum 
+    total = 0
+    for num in nums:
+        # print(num)
+        total += num
+    print(f"Total Sum is {total}")
+
+add_numbers(10,20)
+add_numbers(10,20,30)
+add_numbers(10,20,30,40,50)
+
+# Real World Scenario Use Case: Carts in Ecommerce Application 
+
+print("=" * 20)  
+
+# Arbitrary Keywords Arguments
+def profile(**info):
+    print(info)
+    
+profile(fname="Ravi")
+profile(fname="Ravi",lname="Krishna")
+profile(fname="Ravi",lname="Krishna",email="ravi2krishna@gmail.com")
+
+# Real World Use Case -> jan=2000,feb=3500,mar=5000
+# Get Total Transactions Value and Number Of Transactions 
+def bank_transactions(**transactions):
+    print(transactions)
+    total = 0
+    transactions_count = 0
+    for transaction in transactions:
+        print(transaction)
+        print(transactions[transaction])
+        total += transactions[transaction]
+        transactions_count += 1
+    print(f"You have Done {transactions_count} Transactions, Which Totals To {total}")
+
+bank_transactions(jan=2000,feb=3500,mar=5000)
+bank_transactions(jan=2000,feb=3500,mar=5000,apr=5500,may=7000,jun=10000)
+
+print("=" * 20)  
+
+# Without return 
+def add(a,b):
+    a + b 
+    
+add(10,20)
+print(add(10,20)) # When you don't use a return, by default a function returns "None" 
+
+# With return 
+def add(a,b):
+   return a + b 
+
+add(10,20)
+print(add(10,20))
+print(add(30,60))
+
+# function composition (function calling another function)
+def sub(c,d,e): # add c & d, then minus e -> c + d - e
+    return add(c,d) - e 
+
+print(sub(3,4,5)) # 3 + 4 - 5 -> 2 
+
+print("=" * 20)  
+
+# return - make sure it's the last part of statement to be executed
+def add(a,b):
+    print("Calculation Started")
+    return a + b 
+    print("Calculation Completed") # Code is structurally unreachable
+
+print(add(200,100))    
+
+print("=" * 20) 
+
+# with multiple return statements, first will be considered
+def math_ops(num1,num2):
+    return num1 + num2 
+    return num1 - num2 
+    return num1 * num2
+    return num1 / num2 
+
+print(math_ops(30,60))
+
+print("=" * 20) 
+
+# with multiple return statements, conditional approach 
+def math_ops(num1,num2,operator):
+    if operator == "+":
+        return num1 + num2 
+    elif operator == "-":
+        return num1 - num2 
+    elif operator == "*":
+        return num1 * num2
+    elif operator == "/":
+        return num1 / num2 
+    else:
+        return "Invalid Operator"
+    
+
+print(math_ops(40,60,"+"))    
+print(math_ops(40,60,"*"))
+print(math_ops(40,60,"$"))
+    
