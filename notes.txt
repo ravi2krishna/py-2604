@@ -1485,3 +1485,86 @@
         -> If multiple returns are present, and used with conditionals, 
         you can control the flow
 
+
+31st Mar 2026
+===============
+
+    -> Scopes In Functions 
+
+        -> Scope: Inside the code blocks, where you can access variables 
+        depends on the scope 
+
+            -> Local Scope 
+
+            -> Global Scope 
+
+        -> Local Scope 
+
+            -> A local variable i.e declared "inside the function"
+            -> It's lifetime exists only within the function 
+            -> We Cannot use them outside the function
+            -> NOTE: Parameters we are passing to the functions, are also local variables
+
+
+        -> Global Scope 
+
+            -> A Global variable is declared "outside the function" 
+            -> It's lifetime exists within the function and also outside the function
+
+            -> As Global Variable can be accessed inside the function and outside as well
+            there can be name conflict issue, in this scenario preference is given to 
+            local variables 
+
+                -> NOTE: To Access Global Variable In Above Scenario, use globals()
+
+            -> If you want global variables to be changed inside the function, 
+            we cannot do that directly 
+
+                -> NOTE: To change Global Variable inside the function, we use global keyword 
+
+
+    -> Types Of Functions 
+
+        -> Built In Functions
+
+        -> User Defined Functions 
+
+        -> Lambda Functions 
+
+        -> Higher Order Functions 
+
+    
+    -> Built In Functions
+
+        -> These are pre defined functions, already part of Standard Python Library 
+
+        -> No need to create these functions again using def keyword 
+
+        -> Just call these functions using name 
+
+        -> Examples Include 
+
+            -> print()
+            -> id()
+            -> type()
+            -> dir()
+            -> input()
+            -> etc 
+
+    
+    -> User Defined Functions 
+
+        -> These are user defined functions, which are created by Developers 
+        using def keyword 
+
+        -> These functions are created based on Customers Requirement 
+
+        -> Examples Include 
+
+            -> add()
+            -> employee_info()
+            -> math_ops()
+            -> etc 
+
+        
+            
