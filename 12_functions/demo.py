@@ -323,6 +323,94 @@ print(increment())
 # math_ops()
 # increment()
 
+# without lambda function / Regular Function 
+def add(a,b):
+    return a+b 
+print(add(10,10))
+# With lambda function
+# lambda arguments:expression
+lambda a,b:a+b 
+print((lambda a,b:a+b) (20,10)) # IILE 
+
+# without lambda 
+def is_even_num(num):
+    if num % 2 == 0:
+        return True 
+    else:
+        return False 
+
+print(is_even_num(11))
+print(is_even_num(10))
+
+# with lambda 
+lambda num:num % 2 == 0
+print((lambda num:num % 2 == 0) (10)) # IILE 
+print((lambda num:num % 2 == 0) (11)) # IILE 
+
+# without lambda 
+def employee_info(emp_name,emp_email,emp_location):
+    print(f"Hi {emp_name}, your email is {emp_email} and work location is {emp_location}")
+    
+employee_info(emp_location="hyderabad",emp_name="ravi",emp_email="ravi@gmail.com")
+
+# with lambda 
+# lambda arguments:expression
+print((lambda emp_name,emp_email,emp_location:print(f"Hi {emp_name}, your email is {emp_email} and work location is {emp_location}")) (emp_location="hyderabad",emp_name="ravi",emp_email="ravi@gmail.com")) # IILE 
+
+# Without Higher Order Function - map()
+# Write a script/program to take a list of numbers and return the square of list of numbers
+# [1,2,3,4,5] ==> [1,4,9,16,25]
+def square_list(numbers):
+    squared_list = []
+    for num in numbers:
+        squared_list.append(num * num)
+    return squared_list
+
+print(square_list([1,2,3,4,5]))
+
+# With Higher Order Function - map()
+# Write a script/program to take a list of numbers and return the square of list of numbers
+# [1,2,3,4,5] ==> [1,4,9,16,25]
+# syntax -> map(function, iterable)
+map((lambda num: num * num),[1,2,3,4,5])
+print(map((lambda num: num * num),[1,2,3,4,5]))
+print(list(map((lambda num: num * num),[1,2,3,4,5])))
+
+# Real World Use Case Of Working With Lambda & Higher Order Functions 
+products = [
+    {"name": "Laptop", "price": 80000, "discount": 10},
+    {"name": "Phone", "price": 50000, "discount": 5},
+    {"name": "Headphones", "price": 2000, "discount": 15},
+    {"name": "Charger", "price": 1500, "discount": 0},
+    {"name": "Camera", "price": 30000, "discount": 20},
+]
+
+# real world use case of map -> find me prices after discounts 
+
+# find me prices after discount (How To Do - imperative)
+prices_after_discount = []
+for product in products:
+    # print(product)
+    price = product["price"]
+    # print(price)
+    discount = product["discount"]
+    
+    price_after_discount = price - (price * discount / 100)
+    # print(price_after_discount)
+    prices_after_discount.append(price_after_discount)
+    
+print(prices_after_discount)
+
+# real world use case of map -> find me prices after discounts 
+
+# syntax -> map(function,iterable) (What To Do - declarative)
+map((lambda product: product["price"] - product["price"] * product["discount"] / 100 ),products)
+print(map((lambda product: product["price"] - product["price"] * product["discount"] / 100 ),products))
+print(list(map((lambda product: product["price"] - product["price"] * product["discount"] / 100 ),products)))
+print(list(map((lambda p: p["price"] - p["price"] * p["discount"] / 100 ),products)))
+
+prices_after_discount = list(map((lambda p: p["price"] - p["price"] * p["discount"] / 100 ),products))
+print("Prices After Discounts: ",prices_after_discount)
 
 
 

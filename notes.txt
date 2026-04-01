@@ -1567,4 +1567,57 @@
             -> etc 
 
         
-            
+1st Apr 2026
+===============
+
+    -> Lambda Functions 
+
+        -> A lambda function in Python is a small, anonymous function 
+        defined with the "lambda" keyword.
+
+        -> Unlike standard functions defined with def, lambda functions are 
+        restricted to a "single expression", which is "implicitly returned"
+
+        -> They are often used for "short, one-time operations" where 
+        a full function definition would be unnecessarily verbose.
+
+        -> syntax
+
+            lambda arguments:expression
+
+        -> Using lambda we can write one liner functions called "IILE" 
+        Immediately Invoked Lambda Expression  
+
+    -> Lambda & Higher Order Functions
+
+    -> NOTE: Generally lambda functions will be "attached" with "Higher Order Functions" 
+
+    -> Higher Order Functions 
+
+        -> The goal of Higher Order Functions is to "perform operations on Iterables" 
+
+        -> Concise Code, without writing lengthy code with loops and conditionals
+
+            -> NOTE: Remember Imperative vs Declarative Style (How To Do vs What To Do) 
+
+        -> map()
+
+                -> The map() function in Python is a built-in function that applies 
+                a given function to each item in an iterable (like a list, tuple, or string) 
+                and returns an iterator containing the results. 
+                    
+                -> It provides a concise way to perform "transformations" on 
+                collections of data without explicitly writing loops. 
+
+                -> Functional Programming 
+
+                    -> In computer science, functional programming is a programming paradigm 
+                    where programs are constructed by applying and composing "functions"
+
+                    -> syntax
+
+                        map(function, iterable)
+
+                -> NOTE: Just Like Using For Loop with function
+
+                    -> Using the map() Function (Data Transformation)    
