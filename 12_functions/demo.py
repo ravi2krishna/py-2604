@@ -413,4 +413,52 @@ prices_after_discount = list(map((lambda p: p["price"] - p["price"] * p["discoun
 print("Prices After Discounts: ",prices_after_discount)
 
 
+# without filter()
+# Write a script/program to take a list of numbers and return the even list of numbers 
+# [1,2,3,4,5,6,7,8,9,10] ==> [2,4,6,8,10]
 
+def even_list(numbers):
+    evened_list = []
+    for num in numbers:
+        if num % 2 == 0:
+            evened_list.append(num)
+    return evened_list
+
+print(even_list([1,2,3,4,5,6,7,8,9,10]))
+
+# with filter()
+# Write a script/program to take a list of numbers and return the even list of numbers 
+# [1,2,3,4,5,6,7,8,9,10] ==> [2,4,6,8,10]
+# filter(function, iterable)
+# lambda num: num % 2 == 0
+filter((lambda num: num % 2 == 0),[1,2,3,4,5,6,7,8,9,10])
+print(filter((lambda num: num % 2 == 0),[1,2,3,4,5,6,7,8,9,10]))
+print(list(filter((lambda num: num % 2 == 0),[1,2,3,4,5,6,7,8,9,10])))
+
+
+# Real World Use Case Of Working With Lambda & Higher Order Functions 
+products = [
+    {"name": "Laptop", "price": 80000, "discount": 10},
+    {"name": "Phone", "price": 50000, "discount": 5},
+    {"name": "Headphones", "price": 2000, "discount": 15},
+    {"name": "Charger", "price": 1500, "discount": 0},
+    {"name": "Camera", "price": 30000, "discount": 20},
+]
+
+# find me premium products i.e a product with price above 25000 
+premium_products = []
+
+for product in products:
+    price = product["price"]
+    if price > 25000:
+        premium_products.append(product)
+        
+print(premium_products)
+print(premium_products[0]['name'], premium_products[0]['price'])
+
+print(list(filter((lambda p: p['price'] > 25000),products)))
+premium_products = list(filter((lambda p: p['price'] > 25000),products))
+print("Premium Products: ",premium_products)
+
+for p in premium_products:
+    print(p['name'], p['price'])
