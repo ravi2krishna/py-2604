@@ -1723,3 +1723,90 @@
         -> In order to use package, use name of the folder
 
 
+6th Apr 2026
+===============
+
+    -> File Management With Python 
+
+        -> After executing 12_functions/app.py 
+        we can confirm "data" is being stored "Temporarily" 
+
+        -> All the activities we performed so far, were dealing with
+        "Non-Persistent" Storage (RAM / MEMORY)
+
+            -> Non-Persistent Storage is "Temporary" 
+
+        -> Now the Requirement is to work with "Persistent" Storage (HARD DISK) 
+
+            -> Persistent Storage is "Permanent" 
+
+    
+    -> File Operations 
+
+        -> CRUD 
+
+            -> Create File 
+            -> Read From File 
+            -> Update To File 
+            -> Delete File 
+
+    
+    -> To Work With Any Type Of File, python has provided 
+
+        -> open() function
+
+            -> Modes 
+
+                -> r - read
+                -> w - write (overwrite data)
+                -> a - append (preserve old data and then add new data)
+                -> etc 
+
+        -> syntax - 1 
+
+            open("file_path","mode"):
+                statements 
+            
+            open("file.txt","r"):
+                statements
+
+            -> NOTE: Here we need to "explicitly close" files after operations are performed
+
+        -> syntax - 2 (Recommended)
+
+            with open("file_path","mode") as alias_name:
+                statements 
+
+            with open("file.txt","r") as file_data:
+                statements 
+
+            -> NOTE: Here "implicitly file is closed" after operations are performed
+
+
+    -> File Reading "r" Mode 
+
+        -> read()
+        -> readline()
+        -> readlines()
+
+    -> File Writing "w" Mode
+
+        -> write()
+        -> writelines()
+
+        -> NOTE: In "w" mode, previous data is overwritten
+
+    -> File Writing "a" Mode (Append)
+
+        -> NOTE: In "a" mode, previous data is not overwritten, rather it's added 
+
+
+    -> Directory / Folder Management 
+
+        -> "os" Module 
+
+        -> "shutil" Module 
+
+        -> NOTE: Creating & Deleting Directory / Folder can be done with above modules 
+
+        
