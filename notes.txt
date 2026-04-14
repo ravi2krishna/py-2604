@@ -1946,3 +1946,103 @@
 
                 class MyCustomError(Exception):
                     pass 
+
+14th Apr 2026
+===============
+
+    -> OOP - Object Oriented Programming
+
+        -> OOP, or Object-Oriented Programming, is a programming model/paradigm 
+        that organizes code around "objects" which are software entities 
+        that contain both "data" (attributes/variables) and the "methods"(functions) 
+        that operate on that data.
+
+
+    -> Earlier (Functional Style)
+
+        -> Writing Long List Of Instruction (task oriented)
+
+    -> Moving Forward 
+
+            -> Thinking in terms of real world entities (objects)
+
+                -> Object - Data (attributes/variables)
+
+                -> Object - Behavior (methods/functions)
+
+            -> Writing code that follows Object Oriented Design 
+
+                -> Focus is on objects and their relationships, not just functions(tasks)
+
+                -> We don't think about steps, we think about "who does what"
+
+    Compare Functional vs OOP 
+
+                            Functional Style                        Object Oriented Style 
+
+    -> Focus                Step by step functions                  Real World Objects 
+
+    -> Data & Function      Separate                                Combined inside a class 
+
+    -> Code Organization    One Big Script                          Multiple Reuseable Classes 
+
+    -> Reusability          Harder                                  Easy as for Inheritance
+
+    -> Maintenance          Complex as code grows                   More Cleaner 
+
+
+    -> Four Pillars Of OOPS
+
+        -> Inheritance 
+
+            -> Using Inheritance we get "Reusability"
+
+        -> Encapsulation 
+
+            -> Binding Data & Behavior Together with Data Hiding 
+
+        -> Abstraction 
+
+            -> Hiding Complexity, and show only what user needs 
+
+        -> Polymorphism 
+
+            -> For Extensibility, One Entity has multiple forms 
+
+    -> Functional Style Code 
+
+        def attended_session(name):
+            print(f"{name} Attended Session")
+
+    -> Object Oriented Style Code 
+
+        class Student:
+
+            def __init__(self,name):
+                self.name = name 
+        
+            def attended_session(self):
+                pre(f"{self.name} Attended Session")
+
+    -> To Work With OOP, below is better approach 
+
+        -> Classes 
+
+        -> Objects 
+
+        -> Methods 
+
+        -> Constructors (__init__) 
+
+        -> Instance Members 
+
+        -> Class Members 
+
+        -> Static Members
+
+        -> OOP Principals 
+
+            -> Inheritance
+            -> Encapsulation
+            -> Abstraction
+            -> Polymorphism
