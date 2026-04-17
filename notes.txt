@@ -2237,3 +2237,88 @@
             
             class Child(Parent):
                 pass 
+
+
+17th Apr 2026
+===============
+
+    -> Inheritance Types 
+
+        -> Single Level Inheritance
+
+            -> One Parent -> One Child 
+
+        -> Multi Level Inheritance
+
+            -> Grand Parent -> Parent -> Child   
+
+        -> Multiple  Inheritance
+
+            -> One Child -> Multiple Parents
+
+        -> Hierarchial Inheritance
+
+            -> One Parent -> Multiple Child
+
+        -> Hybrid Inheritance
+
+            -> Combination Of Inheritance Types 
+
+
+    -> Encapsulation
+
+        -> Encapsulation is a core concept in object-oriented programming (OOP) that "binds"
+        data (attributes) and the methods that operate on data into a single unit, called 
+        as a Class. 
+
+            -> "binds" data (attributes/variables) and the methods = Class 
+
+            -> Binding Of Data(Variables) and Methods is done in Classes 
+
+                -> https://www.cincom.com/wp-content/uploads/2025/08/ENCAPSULATION-01.webp
+
+        -> Encapsulation process also involves "restricting" direct access to an 
+        object's internal state, which is a principle known as "data hiding" 
+
+        -> Other Languages like Java or C++ "enforces" Strict Rules for Encapsulation,  
+        coming to python there is no Strict enforcing. 
+
+            -> Java / C++ = "You're Not ALlowed"
+
+            -> Python = "You shouldn't, but if you insist you can"
+
+        -> While Python does not have strict access modifiers like "private" or "protected" 
+        keywords found in some other languages, 
+        python uses "naming conventions" to indicate the visibility of members.
+
+
+        -> Hiding Data 
+
+            -> We have "public" access 
+
+                -> Without any special naming convention or prefixes 
+                are considered as public and can be access anywhere.
+
+            -> We have "private" access 
+
+                -> Prefixed with double underscore(__)
+
+                -> It Cannot be Accessed from Outside 
+
+                -> NOTE: Python = "You shouldn't, but if you insist you can"
+
+                -> print(obj._ClassName__private_variable) (Name Mangling)
+
+
+            -> We have "protected" access 
+
+                -> Prefixed with Single underscore(_)
+
+                -> It Cannot be Accessed from Outside
+                but can access within sub classes 
+    
+        -> NOTE: The Prefixes / Naming conventions, are signals to
+        other Developers that, these attributes are intended for internal use only
+
+
+             
