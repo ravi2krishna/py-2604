@@ -2321,4 +2321,43 @@
         other Developers that, these attributes are intended for internal use only
 
 
-             
+20th Apr 2026
+===============
+
+    -> Abstraction
+
+        -> Abstraction is an OOP principle that involves "HIDING" 
+        complex "implementation" details and show only the essentials Features
+        to the user. 
+
+        -> Hiding implementation ?? 
+
+            -> Means hiding internal working and show only simplified view.
+
+    -> To achieve Abstraction in Python 
+
+        -> Using "Abstract Classes" 
+
+    -> Class or Concrete Class is a "Blueprint" for creating Objects
+
+    -> An Abstract Class functions as a "Blueprint" for creating other classes
+    defining common structure that subclass must adhere to.
+
+        -> We have contracts that we must adhere to, here contracts are Abstract Classes 
+
+    -> Abstract Classes cannot be instantiated directly, meaning we cannot create objects 
+    to Abstract classes 
+
+    -> Abstract classes are implemented in "abc" module (Abstract Base Class)
+
+    -> NOTE: To achieve Abstraction, create a class that inherits from ABC 
+
+    -> NOTE: Define Abstract methods using @abstractmethod decorator
+
+        -> An Abstract Methods has only declarations, but no implementations 
+
+    
+
+
+
+
